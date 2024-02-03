@@ -1,0 +1,5 @@
+Test case 1: Error Message Displayed for Invalid Number Input
+Test case 2: Error Message Displayed for Invalid Operation Input
+Test case 3: Error Message Displayed When User Try to Divide A Zero Number
+Test case 4: Verify That User Can Continue The Simple Calculator Program With "Yes"
+Test case 4: Verify That User Can Quit A Simple Calculator Program With "No" And Got The Message "Goodbye!"
