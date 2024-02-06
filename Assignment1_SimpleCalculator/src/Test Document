@@ -1,5 +1,39 @@
-Test case 1: Error Message Displayed for Invalid Number Input
-Test case 2: Error Message Displayed for Invalid Operation Input
-Test case 3: Error Message Displayed When User Try to Divide A Zero Number
-Test case 4: Verify That User Can Continue The Simple Calculator Program With "Yes"
-Test case 4: Verify That User Can Quit A Simple Calculator Program With "No" And Got The Message "Goodbye!"
+Test case 1: Error Message Displayed for Invalid Number Input - PASSED
+Step:
+1. Launch Simple Calculator program
+2. Enter invalid number 1 or number 2 (e.g.: 12text45)
+3. Observe the result
+Observed result: Message "Invalid input. Re-enter the second number (nonletter)" displayed and users must input another value of number 1 (or number 2) until the correct value is entered.
+
+Test case 2: Error Message Displayed for Invalid Operation Input - PASSED
+Step:
+1. Launch Simple Calculator program
+2. Enter valid number 1 and number 2
+3. Enter a string for operation (e.g.: 12text45) or a number more than 4 or a number less than 1
+4. Observe the result
+Observed result: Message "Re-enter the operation number (1-4)" displayed and users must input another value until the correct operation is entered.
+
+Test case 3: Error Message Displayed When User Try to Divide A Zero Number - PASSED
+Step:
+1. Launch Simple Calculator program
+2. Enter valid number 1 
+3. Enter 0 for number 2
+4. Enter 4 for operation (chose Divide option)
+5. Observe the result
+Observed result: Message "Cannot divide by zero" displayed.
+
+Test case 4: Verify That User Can Continue The Simple Calculator Program With "Yes" - PASSED
+Step:
+1. Launch Simple Calculator program
+2. Enter valid number 1 and number 2
+3. Enter a number (1-4) to choose a operation
+4. Type Yes continue the program
+Observed result: User can continue Simple Calculator program. She is required to input number 1 value.
+
+Test case 5: Verify That User Can Quit A Simple Calculator Program With "No" And Got The Message "Goodbye!" - PASSED
+Step:
+1. Launch Simple Calculator program
+2. Enter valid number 1 and number 2
+3. Enter a number (1-4) to choose a operation
+4. Type No continue the program
+Observed result: The Message "Goodbye!" displayed
