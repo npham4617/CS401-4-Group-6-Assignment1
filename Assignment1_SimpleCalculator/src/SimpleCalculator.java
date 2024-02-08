@@ -3,42 +3,45 @@ import java.util.Scanner;
 public class SimpleCalculator {
 	
 	public static boolean checkUserInput(String userIn) {
-		// Make sure the input value being a string
-		boolean flag = false;
-		int index = 0;
-		
-		while (index < userIn.length()) {
-			if (!(userIn.charAt(index) >= '0' && userIn.charAt(index) <='9')) {
-				flag = true;	
+		boolean flag= false; 
+		for (char ch: userIn.toCharArray()) {
+			if(!Character.isDigit(ch)) {
+				flag=true; 
+				break; 
 			}
-			index = index + 1;
+			
 		}
-		return flag;
+       return flag; 
 	}
 	
 	public static void myCalculator (int number1, int number2, int operation) {	
 		int result;
-	    if (operation == 1) {
-	    	result = number1 + number2;
+		switch(operation) {
+		
+		case 1: 
+			result = number1 + number2;
 	    	System.out.println("Result: " + number1 + " + " + number2 + " = " + result);
-	    }
-	    if (operation == 2) {
-	    	result = number1 - number2;
+	    	break;
+	    	
+		case 2:  
+			result = number1 - number2;
 	    	System.out.println("Result: " + number1 + " - " + number2 + " = " + result);
-	    }
-	    if (operation == 3) {
-	    	result = number1 * number2;
-	    	System.out.println("Result: " + number1 + " * " + number2 + " = " + result);
-	    }
-	    if (operation == 4) {
-	    	if (number2 == 0) {
+	    	break; 
+		case 3:
+			result = number1 * number2;
+			System.out.println("Result: " + number1 + " * " + number2 + " = " + result);
+			break; 
+		case 4:
+			if (number2 == 0) {
 	    		System.out.println("Cannot divide by zero");
 	    	}
 	    	else {
 	    		float resultDi = (float) number1 / number2;
 	    		System.out.println("Result: " + number1 + " / " + number2 + " = " + String.format("%.2f", resultDi));
+	    	
 	    	}
-	    }
+			break;
+		}
 	}
 	
 	public static void main (String[] arg) {
@@ -89,6 +92,10 @@ public class SimpleCalculator {
 		   
 		    System.out.print("\nDo you want to perform another calculation? (yes/no): ");
 		    action = scanner.nextLine(); 
+		    while(!action.equals("yes")&& !action.equals("no")) {
+		    	 System.out.print("Invalid input. Please enter 'yes' or 'no': ");
+	                action = scanner.nextLine();
+		    }
 		    
 		    if (action.equals("no"))
 		    	System.out.println("\nGoodbye!");

@@ -1,0 +1,31 @@
+*Welcome to the Simple Calculator!*
+
+Enter the first number: *10*
+Enter the second number: *5* 
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+
+Enter the operation number: *1*
+Result: 10 + 5 = 15
+
+Do you want to perform another calculation? (yes/no): *yes*
+
+Enter the first number: *8*
+Enter the second number: *2*
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+
+Enter the operation number: *3*
+Result: 8 * 2 = 16
+
+Do you want to perform another calculation? (yes/no): *no*
+
+Goodbye!
